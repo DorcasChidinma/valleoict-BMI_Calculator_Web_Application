@@ -1,6 +1,6 @@
 # Create a new security group for the load balancer
 resource "aws_security_group" "sg" {
-  name   = "sg"
+  name   = "loadbalancer_sg"
   vpc_id = aws_vpc.custom.id
 
   # HTTP access from anywhere
